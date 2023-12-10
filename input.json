@@ -1,0 +1,27 @@
+{
+  "baseURL": "http://www.spoj.com/problems/VISIBLEBOX/",
+  "debug": true,
+  "imagesDownloadPath": "/local/path/to/save/images",
+  "runSinglePage": false,
+  "DB": {
+    "host": "localhost",
+    "user": "ows",
+    "password": "123456",
+    "dbname": "ows",
+    "port": 3306,
+    "tableName": "test",
+    "overrideTable": true,
+    "type": "MYSQL"
+  },
+  "delay": 2000,
+  "htmlRule": [
+    {
+      "name": "Name",
+      "value": "<h2 id=\"problem-name\" class=\"text-center\">"
+    },
+    {
+      "name": "Description",
+      "phone": "<div id=\"problem-body\">"
+    }
+  ]
+}
